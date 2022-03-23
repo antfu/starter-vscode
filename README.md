@@ -1,6 +1,6 @@
 # [name]
 
-[![NPM version](https://img.shields.io/npm/v/[name]?color=a1b858&label=)](https://www.npmjs.com/package/[name])
+<a href="https://marketplace.visualstudio.com/items?itemName=antfu.[name]" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/antfu.[name].svg?color=eee&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
 
 ## Sponsors
 
@@ -12,4 +12,4 @@
 
 ## License
 
-[MIT](./LICENSE) License © 2021 [Anthony Fu](https://github.com/antfu)
+[MIT](./LICENSE) License © 2022 [Anthony Fu](https://github.com/antfu)
