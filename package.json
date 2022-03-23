@@ -1,6 +1,6 @@
 {
-  "name": "name",
-  "displayName": "My Extension",
+  "name": "[name]",
+  "displayName": "[name]",
   "version": "0.0.0",
   "publisher": "antfu",
   "packageManager": "pnpm@6.32.3",
