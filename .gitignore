@@ -3,6 +3,7 @@
 .idea
 *.log
 *.tgz
+*.vsix
 coverage
 dist
 lib-cov
