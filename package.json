@@ -3,6 +3,7 @@
   "name": "name",
   "displayName": "My Extension",
   "version": "0.0.0",
+  "private": true,
   "packageManager": "pnpm@7.0.1",
   "description": "",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
@@ -22,7 +23,6 @@
   "categories": [
     "Other"
   ],
-  "sideEffects": false,
   "main": "./dist/index.js",
   "icon": "res/icon.png",
   "files": [
