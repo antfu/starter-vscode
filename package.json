@@ -1,63 +1,65 @@
 {
+  "publisher": "antfu",
   "name": "name",
   "displayName": "My Extension",
   "version": "0.0.0",
-  "publisher": "antfu",
   "packageManager": "pnpm@7.0.1",
   "description": "",
-  "keywords": [],
-  "homepage": "https://github.com/antfu/[name]#readme",
-  "bugs": {
-    "url": "https://github.com/antfu/[name]/issues"
-  },
-  "license": "MIT",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/antfu",
+  "homepage": "https://github.com/antfu/[name]#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/antfu/[name]"
   },
-  "funding": "https://github.com/sponsors/antfu",
-  "main": "./dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "sideEffects": false,
-  "engines": {
-    "vscode": "^1.65.0"
+  "bugs": {
+    "url": "https://github.com/antfu/[name]/issues"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/antfu"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "*"
-  ],
+  "sideEffects": false,
+  "main": "./dist/index.js",
   "icon": "res/icon.png",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
     "dev": "nr build --watch",
     "lint": "eslint .",
     "vscode:prepublish": "nr build",
-    "publish": "vsce publish --no-dependencies --allow-star-activation",
-    "pack": "vsce package --no-dependencies --allow-star-activation",
+    "publish": "vsce publish --no-dependencies",
+    "pack": "vsce package --no-dependencies",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "release": "bumpp --commit --push --tag && nr publish"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.23.0",
+    "@antfu/eslint-config": "^0.25.1",
     "@antfu/ni": "^0.16.2",
-    "@babel/types": "^7.17.10",
-    "@types/node": "^17.0.32",
-    "@types/vscode": "^1.67.0",
+    "@babel/types": "^7.18.4",
+    "@types/node": "^17.0.41",
+    "@types/vscode": "^1.68.0",
     "bumpp": "^7.1.1",
-    "eslint": "^8.15.0",
-    "esno": "^0.14.1",
-    "pnpm": "^7.0.1",
+    "eslint": "^8.17.0",
+    "esno": "^0.16.3",
+    "pnpm": "^7.1.9",
     "rimraf": "^3.0.2",
-    "tsup": "^5.12.1",
-    "typescript": "^4.6.4",
-    "vite": "^2.9.8",
-    "vitest": "^0.12.4",
-    "vsce": "^2.7.0"
+    "tsup": "^6.1.0",
+    "typescript": "^4.7.3",
+    "vite": "^2.9.11",
+    "vitest": "^0.14.1",
+    "vsce": "^2.9.1"
   }
 }
