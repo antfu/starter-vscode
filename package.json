@@ -4,7 +4,7 @@
   "displayName": "ext-name",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@8.6.0",
+  "packageManager": "pnpm@8.9.2",
   "description": "",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -29,7 +29,7 @@
     "dist"
   ],
   "engines": {
-    "vscode": "^1.78.1"
+    "vscode": "^1.83.0"
   },
   "activationEvents": [
     "onStartupFinished"
@@ -46,19 +46,19 @@
     "release": "bumpp && nr publish"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.5",
-    "@antfu/ni": "^0.21.3",
-    "@types/node": "^18.16.16",
-    "@types/vscode": "^1.78.1",
-    "@vscode/vsce": "^2.19.0",
-    "bumpp": "^9.1.0",
-    "eslint": "^8.42.0",
-    "esno": "^0.16.3",
-    "pnpm": "^8.6.0",
-    "rimraf": "^5.0.1",
-    "tsup": "^6.7.0",
-    "typescript": "^5.1.3",
-    "vite": "^4.2.3",
-    "vitest": "^0.31.4"
+    "@antfu/eslint-config": "^1.0.0-beta.27",
+    "@antfu/ni": "^0.21.8",
+    "@types/node": "^20.8.6",
+    "@types/vscode": "^1.83.0",
+    "@vscode/vsce": "^2.21.1",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.51.0",
+    "esno": "^0.17.0",
+    "pnpm": "^8.9.2",
+    "rimraf": "^5.0.5",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.11",
+    "vitest": "^0.34.6"
   }
 }
