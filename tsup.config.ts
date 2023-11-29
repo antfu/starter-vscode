@@ -10,4 +10,5 @@ export default defineConfig({
   external: [
     'vscode',
   ],
+  sourcemap: true,
 })
