@@ -35,6 +35,9 @@ importers:
       pnpm:
         specifier: ^9.3.0
         version: 9.3.0
+      reactive-vscode:
+        specifier: 0.2.0-beta.9
+        version: 0.2.0-beta.9(@types/vscode@1.90.0)
       rimraf:
         specifier: ^5.0.7
         version: 5.0.7
@@ -50,6 +53,9 @@ importers:
       vitest:
         specifier: ^1.6.0
         version: 1.6.0(@types/node@20.14.2)
+      vscode-ext-gen:
+        specifier: ^0.3.4
+        version: 0.3.4
 
 packages:
 
@@ -553,6 +559,9 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
+
+  '@reactive-vscode/reactivity@0.2.0-beta.9':
+    resolution: {integrity: sha512-ywqvCvM/brvkRRntvTSfy8dyEgzAmdxTLhzZqugY3iXjttF9jh5f1EVwF93Vzjv0YlXwM3MjTze6lPhMCNCFvQ==}
 
   '@rollup/rollup-android-arm-eabi@4.17.2':
     resolution: {integrity: sha512-NM0jFxY8bB8QLkoKxIQeObCaDlJKewVlIEkuyYKm5An1tdVZ966w2+MPQ2l8LBZLjR+SgyV+nRkTIunzOYBMLQ==}
@@ -2289,6 +2298,11 @@ packages:
   react-is@18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
 
+  reactive-vscode@0.2.0-beta.9:
+    resolution: {integrity: sha512-DKAxAxdC+0bn44qh5tv3xiE7KCceo8mBRTXM4/7dBIBKjwupb2zO4jwvEENdq1Dt1aayePz8TPZGnT2LwWMvAw==}
+    peerDependencies:
+      '@types/vscode': ^1.89.0
+
   read-pkg-up@7.0.1:
     resolution: {integrity: sha512-zK0TB7Xd6JpCLmlLmufqykGE+/TlOePD6qKClNW7hHDKFh/J7/7gCWGR7joEQEW1bKq3a3yUZSObOoWLFQ4ohg==}
     engines: {node: '>=8'}
@@ -2375,6 +2389,9 @@ packages:
   scslre@0.3.0:
     resolution: {integrity: sha512-3A6sD0WYP7+QrjbfNA2FN3FsOaGGFoekCVgTyypy53gPxhbkCIjtO6YWgdrfM+n/8sI8JeXZOIxsHjMTNxQ4nQ==}
     engines: {node: ^14.0.0 || >=16.0.0}
+
+  scule@1.3.0:
+    resolution: {integrity: sha512-6FtHJEvt+pVMIB9IBY+IcCJ6Z5f1iQnytgyfKMhDKgmzYG+TeH/wx1y3l27rshSbLiSanrR9ffZDrEsmjlQF2g==}
 
   semver@5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
@@ -2751,6 +2768,10 @@ packages:
         optional: true
       jsdom:
         optional: true
+
+  vscode-ext-gen@0.3.4:
+    resolution: {integrity: sha512-ki/hZzDb2MMdue6fkbSgq2dl15Dihq3aDL7HwEMyV/u5a4d07L+1fCzuGwT5zz110g6PyAmGpMcINTDaCCNqJw==}
+    hasBin: true
 
   vue-eslint-parser@9.4.3:
     resolution: {integrity: sha512-2rYRLWlIpaiN8xbPiDyXZXRgLGOtWxERV7ND5fFAv5qo1D2N9Fu9MNajBNc6o13lZ+24DAWCkQCvj4klgmcITg==}
@@ -3245,6 +3266,8 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@reactive-vscode/reactivity@0.2.0-beta.9': {}
 
   '@rollup/rollup-android-arm-eabi@4.17.2':
     optional: true
@@ -5178,6 +5201,11 @@ snapshots:
 
   react-is@18.2.0: {}
 
+  reactive-vscode@0.2.0-beta.9(@types/vscode@1.90.0):
+    dependencies:
+      '@reactive-vscode/reactivity': 0.2.0-beta.9
+      '@types/vscode': 1.90.0
+
   read-pkg-up@7.0.1:
     dependencies:
       find-up: 4.1.0
@@ -5280,6 +5308,8 @@ snapshots:
       '@eslint-community/regexpp': 4.10.0
       refa: 0.12.1
       regexp-ast-analysis: 0.7.1
+
+  scule@1.3.0: {}
 
   semver@5.7.2: {}
 
@@ -5645,6 +5675,12 @@ snapshots:
       - sugarss
       - supports-color
       - terser
+
+  vscode-ext-gen@0.3.4:
+    dependencies:
+      cac: 6.7.14
+      scule: 1.3.0
+      yargs: 17.7.2
 
   vue-eslint-parser@9.4.3(eslint@9.5.0):
     dependencies:
