@@ -58,20 +58,20 @@
     "release": "bumpp && nr publish"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.25.2",
+    "@antfu/eslint-config": "^2.26.0",
     "@antfu/ni": "^0.22.4",
-    "@types/node": "^22.3.0",
+    "@types/node": "^22.4.1",
     "@types/vscode": "^1.92.0",
-    "@vscode/vsce": "^2.32.0",
+    "@vscode/vsce": "^3.0.0",
     "bumpp": "^9.5.1",
     "eslint": "^9.9.0",
     "esno": "^4.7.0",
     "pnpm": "^9.7.1",
-    "reactive-vscode": "0.2.0-beta.9",
+    "reactive-vscode": "^0.2.0",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
     "vite": "^5.4.1",
     "vitest": "^2.0.5",
-    "vscode-ext-gen": "^0.3.6"
+    "vscode-ext-gen": "^0.4.1"
   }
 }
