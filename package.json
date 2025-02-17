@@ -4,7 +4,7 @@
   "displayName": "ext-name",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@9.7.1",
+  "packageManager": "pnpm@10.4.1",
   "description": "",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -31,7 +31,7 @@
     "res/*"
   ],
   "engines": {
-    "vscode": "^1.92.0"
+    "vscode": "^1.97.0"
   },
   "activationEvents": [
     "onStartupFinished"
@@ -58,20 +58,25 @@
     "release": "bumpp && nr publish"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.26.0",
-    "@antfu/ni": "^0.22.4",
-    "@types/node": "^22.4.1",
-    "@types/vscode": "^1.92.0",
-    "@vscode/vsce": "^3.0.0",
-    "bumpp": "^9.5.1",
-    "eslint": "^9.9.0",
-    "esno": "^4.7.0",
-    "pnpm": "^9.7.1",
-    "reactive-vscode": "^0.2.0",
-    "tsup": "^8.2.4",
-    "typescript": "^5.5.4",
-    "vite": "^5.4.1",
-    "vitest": "^2.0.5",
-    "vscode-ext-gen": "^0.4.1"
+    "@antfu/eslint-config": "^4.2.1",
+    "@antfu/ni": "^23.3.1",
+    "@types/node": "^22.13.4",
+    "@types/vscode": "^1.97.0",
+    "@vscode/vsce": "^3.2.2",
+    "bumpp": "^10.0.3",
+    "eslint": "^9.20.1",
+    "esno": "^4.8.0",
+    "pnpm": "^10.4.1",
+    "reactive-vscode": "^0.2.10",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.5",
+    "vscode-ext-gen": "^1.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }

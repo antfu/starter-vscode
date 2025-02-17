@@ -6,13 +6,17 @@
 ## Configurations
 
 <!-- configs -->
-<!-- empty -->
+
+**No data**
+
 <!-- configs -->
 
 ## Commands
 
 <!-- commands -->
-<!-- empty -->
+
+**No data**
+
 <!-- commands -->
 
 ## Sponsors
