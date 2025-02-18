@@ -46,7 +46,7 @@
   },
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
-    "dev": "nr build --watch",
+    "dev": "nr build --watch --sourcemap",
     "prepare": "nr update",
     "update": "vscode-ext-gen --output src/generated/meta.ts",
     "lint": "eslint .",
