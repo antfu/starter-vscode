@@ -1,6 +1,14 @@
 {
-  // Enable the ESlint flat config support
-  "eslint.experimental.useFlatConfig": true,
+  // Auto generate metadata
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "package.json",
+        "isAsync": true,
+        "cmd": "npm run update"
+      }
+    ]
+  },
 
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
@@ -8,7 +16,7 @@
 
   // Auto fix
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
 
