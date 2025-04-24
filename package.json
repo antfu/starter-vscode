@@ -45,7 +45,7 @@
     }
   },
   "scripts": {
-    "build": "tsup src/index.ts --external vscode",
+    "build": "tsdown src/index.ts --external vscode",
     "dev": "nr build --watch --sourcemap",
     "prepare": "nr update",
     "update": "vscode-ext-gen --output src/generated/meta.ts",
@@ -68,7 +68,7 @@
     "esno": "^4.8.0",
     "pnpm": "^10.4.1",
     "reactive-vscode": "^0.2.10",
-    "tsup": "^8.3.6",
+    "tsdown": "^0.9.6",
     "typescript": "^5.7.3",
     "vite": "^6.1.0",
     "vitest": "^3.0.5",
