@@ -10,4 +10,9 @@ export default defineConfig({
   external: [
     'vscode',
   ],
+  hooks(hooks) {
+    hooks.hookOnce('build:prepare', () => {
+      execSync('nr update')
+    })
+  },
 })
