@@ -1,4 +1,5 @@
 import { defineConfig } from 'tsdown'
+import { execSync } from 'node:child_process'
 
 export default defineConfig({
   entry: [
